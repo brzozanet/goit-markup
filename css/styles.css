@@ -1,0 +1,34 @@
+body {
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 1600px;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+}
+
+header .logo {
+  font-family: "Raleway", sans-serif;
+}
+
+header a {
+}
+
+.menu {
+}
+
+main {
+}
+
+.submenu {
+}
+
+.projects {
+}
