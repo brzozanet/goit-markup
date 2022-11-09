@@ -12,7 +12,7 @@ body {
 .wrapper {
   width: 1600px;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   background-color: #fff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -37,10 +37,15 @@ header .logo {
   color: var(--brand-color-blue);
 }
 
-.menu li {
-  list-style-type: none;
+nav ul {
+  display: inline;
   float: left;
   margin-top: 32px;
+}
+
+.menu li {
+  list-style-type: none;
+  display: inline;
   margin-right: 46px;
 }
 
@@ -57,10 +62,16 @@ header .logo {
   color: var(--brand-color-blue);
 }
 
-.contact li {
-  list-style-type: none;
+.contact {
+  display: inline;
   float: left;
   margin-top: 32px;
+  margin-left: 268px;
+}
+
+.contact li {
+  list-style-type: none;
+  display: inline;
   margin-right: 50px;
 }
 
@@ -69,4 +80,18 @@ header .logo {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+}
+
+main {
+  margin: 94px 215px 0px 215px;
+}
+
+.submenu {
+  margin: auto;
+  border: 1px solid #000;
+}
+
+.submenu li {
+  list-style-type: none;
+  display: inline;
 }
