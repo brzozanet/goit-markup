@@ -82,12 +82,19 @@ nav ul {
   font-weight: 500;
 }
 
+.contact a:hover,
+.contact a:focus,
+.contact a:active {
+  color: #000;
+}
+
 main {
   margin: 94px 215px 0px 215px;
 }
 
 .submenu {
-  border: 1px solid #000;
+  margin: auto;
+  width: 580px;
 }
 
 .submenu li {
@@ -103,31 +110,29 @@ button {
   font-weight: 500;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.projects {
-  border: 1px solid rgb(252, 9, 9);
+button:hover,
+button:focus,
+button:active {
+  background-color: var(--brand-color-blue);
+  color: #fff;
 }
 
 .projects li {
   list-style-type: none;
-  border: 1px solid blue;
 }
 
-figure {
-  border: 1px solid black;
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2em;
 }
 
-figcaption {
-  border: 1px solid rgb(9, 248, 236);
-}
-
-.projects li h3 {
-  border: 1px solid orange;
-}
-
-.projects li p {
-  border: 1px solid greenyellow;
+p {
+  font-size: 16px;
+  line-height: 1.9em;
 }
 
 footer {
@@ -152,13 +157,19 @@ address li {
   color: #fff;
   font-size: 14px;
   font-style: normal;
-  line-height: 2.2em;
+  line-height: 1.7em;
   letter-spacing: 0.03em;
 }
 
 address li a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+address li a:hover,
+address li a:focus,
+address li a:active {
+  color: #fff;
 }
 
 address li a span {
