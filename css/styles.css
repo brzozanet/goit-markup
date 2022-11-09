@@ -87,11 +87,45 @@ main {
 }
 
 .submenu {
-  margin: auto;
   border: 1px solid #000;
 }
 
 .submenu li {
   list-style-type: none;
   display: inline;
+}
+
+button {
+  background-color: #f5f4fa;
+  height: 38px;
+  padding: 0px 20px 0px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+}
+
+.projects {
+  border: 1px solid rgb(252, 9, 9);
+}
+
+.projects li {
+  list-style-type: none;
+  border: 1px solid blue;
+}
+
+figure {
+  border: 1px solid black;
+}
+
+figcaption {
+  border: 1px solid rgb(9, 248, 236);
+}
+
+.projects li h3 {
+  border: 1px solid orange;
+}
+
+.projects li p {
+  border: 1px solid greenyellow;
 }
