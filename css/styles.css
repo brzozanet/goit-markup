@@ -129,3 +129,38 @@ figcaption {
 .projects li p {
   border: 1px solid greenyellow;
 }
+
+footer {
+  padding: 60px 0px 60px 215px;
+  background-color: #2f303a;
+}
+
+footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  text-decoration: none;
+}
+
+address ul {
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+address li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 2.2em;
+  letter-spacing: 0.03em;
+}
+
+address li a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+address li a span {
+  text-decoration: underline;
+}
