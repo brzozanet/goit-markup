@@ -12,7 +12,7 @@
 
 body {
   background-color: #e5e5e5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--brand-color-black);
 }
 
@@ -52,7 +52,7 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: #000;
   text-decoration: none;
@@ -90,7 +90,7 @@ body {
   color: var(--brand-color-blue);
 }
 
-/* CONTACTS */
+/* CONTACT */
 
 .contact-list {
   float: left;
@@ -242,7 +242,7 @@ body {
 /* FOOTER */
 
 .footer .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
   float: none;
