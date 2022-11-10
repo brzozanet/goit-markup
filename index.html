@@ -15,65 +15,73 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header-studio">
+      <header class="header">
         <a class="logo" href="index.html" title="Strona główna"
-          ><span>Web</span>Studio</a
+          ><span class="brand-color-blue">Web</span>Studio</a
         >
         <nav>
           <ul class="menu-list">
-            <li class="menu-item"><a href="index.html">Agencja</a></li>
-            <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="menu-item"><a href="#">Kontakt</a></li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item"><a class="menu-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="contact-list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contact-link"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="contact-item">
-            <a href="tel:+48111111111">+48 111 111 111</a>
+            <a href="tel:+48111111111" class="contact-link">+48 111 111 111</a>
           </li>
         </ul>
       </header>
       <!-- SLOGAN -->
       <section class="slogan">
         <div class="slogan-content">
-          <h1>Efektywne rozwiązania dla waszego biznesu</h1>
+          <h1 class="slogan-title">
+            Efektywne rozwiązania dla waszego biznesu
+          </h1>
           <button type="button" class="slogan-btn">Zamów usługę</button>
         </div>
       </section>
       <!-- SLOGAN -->
-      <main class="main-studio">
+      <main class="main">
         <!-- ADVANTAGES -->
         <section class="advantages">
-          <ul class="advantages-list lists">
+          <ul class="advantages-list list">
             <li class="advantages-item">
-              <h3>Lorem ipsum</h3>
-              <p>
+              <h3 class="advantages-title">Lorem ipsum</h3>
+              <p class="advantages-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum
                 neque ipsam maiores voluptates debitis tenetur deserunt
                 asperiores animi dolorem.
               </p>
             </li>
             <li class="advantages-item">
-              <h3>Lorem ipsum</h3>
-              <p>
+              <h3 class="advantages-title">Lorem ipsum</h3>
+              <p class="advantages-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum
                 neque ipsam maiores voluptates debitis tenetur deserunt
                 asperiores animi dolorem.
               </p>
             </li>
             <li class="advantages-item">
-              <h3>Lorem ipsum</h3>
-              <p>
+              <h3 class="advantages-title">Lorem ipsum</h3>
+              <p class="advantages-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum
                 neque ipsam maiores voluptates debitis tenetur deserunt
                 asperiores animi dolorem.
               </p>
             </li>
             <li class="advantages-item">
-              <h3>Lorem ipsum</h3>
-              <p>
+              <h3 class="advantages-title">Lorem ipsum</h3>
+              <p class="advantages-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad cum
                 neque ipsam maiores voluptates debitis tenetur deserunt
                 asperiores animi dolorem.
@@ -85,7 +93,7 @@
         <!-- OFFER -->
         <section class="offer">
           <h2 class="studio-head">Czym się zajmujemy</h2>
-          <ul class="offer-list lists">
+          <ul class="offer-list list">
             <li class="offer-item">
               <img
                 src="images/work1.jpg"
@@ -120,7 +128,7 @@
       <!-- TEAM -->
       <section class="team">
         <h2 class="studio-head">Nasz zespół</h2>
-        <ul class="team-list lists">
+        <ul class="team-list list">
           <li class="team-item">
             <figure class="team-photo">
               <img
@@ -129,9 +137,9 @@
                 height="260"
                 alt="John Doe"
               />
-              <figcaption class="team-dscr">
+              <figcaption class="team-description">
                 <h3>John Doe</h3>
-                <p>Product Designer</p>
+                <p class="team-description-text">Product Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -143,9 +151,9 @@
                 height="260"
                 alt="John Doe"
               />
-              <figcaption class="team-dscr">
+              <figcaption class="team-description">
                 <h3>John Doe</h3>
-                <p>Frontend Developer</p>
+                <p class="team-description-text">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
@@ -157,9 +165,9 @@
                 height="260"
                 alt="John Doe"
               />
-              <figcaption class="team-dscr">
+              <figcaption class="team-description">
                 <h3>John Doe</h3>
-                <p>Marketing</p>
+                <p class="team-description-text">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -171,29 +179,31 @@
                 height="260"
                 alt="John Doe"
               />
-              <figcaption class="team-dscr">
+              <figcaption class="team-description">
                 <h3>John Doe</h3>
-                <p>UI Designer</p>
+                <p class="team-description-text">UI Designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
       </section>
       <!-- TEAM -->
-      <footer class="footer-studio">
+      <footer class="footer">
         <a class="logo" href="index.html" title="Strona główna"
-          ><span>Web</span>Studio</a
+          ><span class="brand-color-blue">Web</span>Studio</a
         >
         <address>
-          <ul class="address-list lists">
+          <ul class="address-list list">
             <li class="address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
             <li class="address-item">
-              <a href="mailto:info@example.com"
+              <a href="mailto:info@example.com" class="address-link"
                 ><span>info@example.com</span></a
               >
             </li>
             <li class="address-item">
-              <a href="tel:+48111111111">+48 111 111 111</a>
+              <a href="tel:+48111111111" class="address-link"
+                >+48 111 111 111</a
+              >
             </li>
           </ul>
         </address>

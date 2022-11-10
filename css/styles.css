@@ -23,25 +23,22 @@ body {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.header-studio,
-.header-portfolio {
+.header {
   height: 80px;
   border-bottom: #ececec solid 1px;
   padding-left: 215px;
 }
 
-.main-studio,
-.main-portfolio {
+.main {
   margin: 94px 215px 0px 215px;
 }
 
-.footer-studio,
-.footer-portfolio {
+.footer {
   padding: 60px 0px 60px 215px;
   background-color: var(--brand-background-dark);
 }
 
-.lists {
+.list {
   list-style-type: none;
 }
 
@@ -64,7 +61,7 @@ body {
   float: left;
 }
 
-.logo span {
+.brand-color-blue {
   color: var(--brand-color-blue);
 }
 
@@ -80,16 +77,16 @@ body {
   margin-right: 46px;
 }
 
-.menu-item a {
+.menu-link {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   color: var(--brand-color-black);
 }
 
-.menu-item a:hover,
-.menu-item a:focus,
-.menu-item a:active {
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
   color: var(--brand-color-blue);
 }
 
@@ -106,16 +103,16 @@ body {
   margin-right: 50px;
 }
 
-.contact-item a {
+.contact-link {
   color: var(--brand-color-grey);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
 }
 
-.contact-item a:hover,
-.contact-item a:focus,
-.contact-item a:active {
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
   color: var(--brand-color-blue);
 }
 
@@ -132,7 +129,7 @@ body {
   margin: 200px 452px 0px 452px;
 }
 
-.slogan h1 {
+.slogan-title {
   color: var(--brand-color-white);
   text-transform: uppercase;
   font-size: 44px;
@@ -167,12 +164,12 @@ body {
   display: inline;
 }
 
-.advantages-item h3 {
+.advantages-title {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.advantages-item p {
+.advantages-text {
   font-size: 14px;
   line-height: 1.7em;
   color: var(--brand-color-grey);
@@ -199,11 +196,11 @@ body {
   border: 1px solid #f5f4fa; /* I dont't know why this property is required */
 }
 
-.team-dscr {
+.team-item {
   background-color: var(--brand-color-white);
 }
 
-.team-dscr p {
+.team-description-text {
   color: var(--brand-color-grey);
 }
 
@@ -238,14 +235,13 @@ body {
 
 /* PROJECTS */
 
-.projects-dscr p {
+.projects-description-text {
   color: var(--brand-color-grey);
 }
 
 /* FOOTER */
 
-.footer-studio .logo,
-.footer-portfolio .logo {
+.footer .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
@@ -264,14 +260,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address-item a {
+.address-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-.address-item a:hover,
-.address-item a:focus,
-.address-item a:active {
+.address-link:hover,
+.address-link:focus,
+.address-link:active {
   color: var(--brand-color-white);
 }
 
