@@ -26,7 +26,7 @@ body {
 .header {
   height: 80px;
   border-bottom: #ececec solid 1px;
-  padding-left: 215px;
+  padding: 0 215px;
 }
 
 .main {
