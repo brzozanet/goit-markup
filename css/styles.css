@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--brand-color-white);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--brand-color-black);
 }
 
@@ -68,7 +68,7 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: #000;
   text-decoration: none;
@@ -153,8 +153,7 @@ body {
 
 .hero {
   background-color: var(--brand-background-dark);
-  background-image: url("/images/hero-overlay.png"),
-    url("/images/hero-underlay.jpg");
+  background-image: url('/images/hero-overlay.png'), url('/images/hero-underlay.jpg');
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -303,12 +302,38 @@ body {
   fill: var(--brand-color-white);
 }
 
-.circle {
-  fill: var(--brand-color-white);
+/* CLIENTS */
+
+.clients {
+  padding-top: 94px;
+  text-align: center;
 }
 
-.circle:hover {
-  fill: red;
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-icon:hover {
+  fill: #2196f3;
 }
 
 /* SUBMENU */
@@ -383,7 +408,7 @@ body {
 /* FOOTER */
 
 .footer .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
 }
