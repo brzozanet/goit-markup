@@ -328,12 +328,16 @@ body {
   margin-right: 0;
 }
 
+.clients-item:hover {
+  border: 1px solid var(--brand-color-blue);
+}
+
 .clients-icon {
   fill: #afb1b8;
 }
 
 .clients-icon:hover {
-  fill: #2196f3;
+  fill: var(--brand-color-blue);
 }
 
 /* SUBMENU */
