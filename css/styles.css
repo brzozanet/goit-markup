@@ -153,7 +153,7 @@ body {
 
 .hero {
   background-color: var(--brand-background-dark);
-  background-image: url('/images/hero-overlay.png'), url('/images/hero-underlay.jpg');
+  background-image: url('images/hero-overlay.png'), url('images/hero-underlay.jpg');
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
