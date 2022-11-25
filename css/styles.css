@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--brand-color-white);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--brand-color-black);
 }
 
@@ -68,7 +68,7 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: #000;
   text-decoration: none;
@@ -153,7 +153,8 @@ body {
 
 .hero {
   background-color: var(--brand-background-dark);
-  background-image: url('/images/hero-overlay.png'), url('/images/hero-underlay.jpg');
+  background-image: url("/images/hero-overlay.png"),
+    url("/images/hero-underlay.jpg");
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -294,6 +295,22 @@ body {
   margin-bottom: 10px;
 }
 
+.team-social-icon {
+  fill: #afb1b8;
+}
+
+.team-social-icon:hover {
+  fill: var(--brand-color-white);
+}
+
+.circle {
+  fill: var(--brand-color-white);
+}
+
+.circle:hover {
+  fill: red;
+}
+
 /* SUBMENU */
 
 .submenu-list {
@@ -343,6 +360,10 @@ body {
   column-gap: 20px;
 }
 
+.projects-photo > img {
+  vertical-align: middle;
+}
+
 .projects-description {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -362,7 +383,7 @@ body {
 /* FOOTER */
 
 .footer .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: var(--brand-color-white);
 }
