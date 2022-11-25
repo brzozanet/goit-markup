@@ -98,7 +98,6 @@ body {
 
 .menu-link {
   text-decoration: none;
-
   font-size: 14px;
   font-weight: 500;
   color: var(--brand-color-black);
@@ -112,14 +111,14 @@ body {
 
 /* CONTACT */
 
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
 .contact-item {
   display: inline;
   margin-right: 50px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
 }
 
 .contact-item:last-child {
@@ -128,6 +127,7 @@ body {
 
 .contact-link {
   color: var(--brand-color-grey);
+  fill: var(--brand-color-grey);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -137,16 +137,25 @@ body {
 .contact-link:focus,
 .contact-link:active {
   color: var(--brand-color-blue);
+  fill: var(--brand-color-blue);
 }
 
-.contact-icon:hover {
-  color: var(--brand-color-blue);
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 /* HERO */
 
 .hero {
   background-color: var(--brand-background-dark);
+  background-image: url('/images/hero-overlay.png'), url('/images/hero-underlay.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
@@ -206,6 +215,15 @@ body {
 
 .advantages-item:last-child {
   margin-right: 0;
+}
+
+.advantages-box {
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .advantages-title {
