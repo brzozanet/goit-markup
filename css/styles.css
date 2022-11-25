@@ -219,6 +219,7 @@ body {
 
 .advantages-box {
   background-color: #f5f4fa;
+  border-radius: 4px;
   padding: 25px 100px;
   display: flex;
   justify-content: center;
