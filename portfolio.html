@@ -21,6 +21,7 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header-line">
       <div class="header container">
         <nav class="navigation">
@@ -39,14 +40,25 @@
         </nav>
         <ul class="contact-list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contact-link"
+              ><svg class="contact-icon" width="16" height="12">
+                <use href="images/icons.svg#icon-contact-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
           </li>
           <li class="contact-item">
-            <a href="tel:+48111111111" class="contact-link">+48 111 111 111</a>
+            <a href="tel:+48111111111" class="contact-link">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="images/icons.svg#icon-contact-smartphone"></use>
+              </svg>
+              <span>+48 111 111 111</span>
+            </a>
           </li>
         </ul>
       </div>
     </header>
+    <!-- END HEADER -->
     <main class="container">
       <!-- SUBMENU -->
       <section class="submenu-list section">
@@ -172,25 +184,58 @@
       </section>
       <!-- PROJECTS -->
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo nofloat" href="index.html" title="Strona główna"
-          ><span class="brand-color-blue">Web</span>Studio</a
-        >
-        <address>
-          <ul class="address-list list">
-            <li class="address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="address-item">
-              <a href="mailto:info@example.com" class="address-link"
-                ><span>info@example.com</span></a
-              >
+      <div class="footer-content container">
+        <div class="footer-address">
+          <a class="logo" href="index.html" title="Strona główna"
+            ><span class="brand-color-blue">Web</span>Studio</a
+          >
+          <address>
+            <ul class="address-list list">
+              <li class="address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="address-item">
+                <a href="mailto:info@example.com" class="address-link"
+                  ><span>info@example.com</span></a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+48111111111" class="address-link">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p>Dołącz do nas</p>
+          <ul class="footer-social-list list">
+            <li>
+              <a href="#" class="footer-social-link" target="blank"
+                ><svg class="footer-social-icon" width="44" height="44">
+                  <use href="images/icons.svg#icon-social-instagram"></use></svg
+              ></a>
             </li>
-            <li class="address-item">
-              <a href="tel:+48111111111" class="address-link">+48 111 111 111</a>
+            <li>
+              <a href="#" class="footer-social-link" target="blank"
+                ><svg class="footer-social-icon" width="44" height="44">
+                  <use href="images/icons.svg#icon-social-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link" target="blank"
+                ><svg class="footer-social-icon" width="44" height="44">
+                  <use href="images/icons.svg#icon-social-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link" target="blank"
+                ><svg class="footer-social-icon" width="44" height="44">
+                  <use href="images/icons.svg#icon-social-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
+    <!-- END FOOTER -->
   </body>
 </html>

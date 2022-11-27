@@ -3,9 +3,10 @@
 :root {
   --brand-color-black: #212121;
   --brand-color-grey: #757575;
+  --brand-color-lightgrey: #afb1b8;
   --brand-color-white: #fff;
   --brand-color-blue: #2196f3;
-  --brand-background-dark: #2f303a;
+  --brand-color-dark: #2f303a;
 }
 
 /* GLOBAL STYLES */
@@ -47,7 +48,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--brand-background-dark);
+  background-color: var(--brand-color-dark);
 }
 
 .section {
@@ -152,7 +153,7 @@ body {
 /* HERO */
 
 .hero {
-  background-color: var(--brand-background-dark);
+  background-color: var(--brand-color-dark);
   background-image: url('../images/hero-overlay.png'), url('../images/hero-underlay.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -296,11 +297,13 @@ body {
 }
 
 .team-social-icon {
-  fill: #afb1b8;
+  fill: var(--brand-color-lightgrey);
 }
 
 .team-social-icon:hover {
   fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border-radius: 50%;
 }
 
 /* CLIENTS */
@@ -318,7 +321,7 @@ body {
   margin-right: 30px;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--brand-color-lightgrey);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -334,7 +337,7 @@ body {
 }
 
 .clients-icon {
-  fill: #afb1b8;
+  fill: var(--brand-color-lightgrey);
 }
 
 .clients-icon:hover {
@@ -412,6 +415,12 @@ body {
 
 /* FOOTER */
 
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .footer .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -444,4 +453,41 @@ body {
 
 .address-item span {
   text-decoration: underline;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social > p {
+  color: var(--brand-color-white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list > li {
+  margin-right: 10px;
+}
+
+.footer-social-list > li:last-child {
+  margin-right: 0;
+}
+
+.footer-social-icon {
+  fill: var(--brand-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-icon:hover {
+  fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border-radius: 50%;
 }
