@@ -339,7 +339,7 @@ body {
   fill: var(--brand-color-lightgrey);
 }
 
-.clients-icon:hover {
+.clients-item:hover .clients-icon {
   fill: var(--brand-color-blue);
 }
 
