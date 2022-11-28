@@ -7,6 +7,7 @@
   --brand-color-white: #fff;
   --brand-color-blue: #2196f3;
   --brand-color-dark: #2f303a;
+  --border-radius-default: 4px;
 }
 
 /* GLOBAL STYLES */
@@ -154,7 +155,8 @@ body {
 
 .hero {
   background-color: var(--brand-color-dark);
-  background-image: url('../images/hero-overlay.png'), url('../images/hero-underlay.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-underlay.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -183,15 +185,13 @@ body {
   color: var(--brand-color-white);
   background-color: var(--brand-color-blue);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius-default);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9em;
-  width: 200px;
-  min-height: 50px;
+  padding: 10px 41px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -220,7 +220,7 @@ body {
 
 .advantages-box {
   background-color: #f5f4fa;
-  border-radius: 4px;
+  border-radius: var(--border-radius-default);
   padding: 25px 100px;
   display: flex;
   justify-content: center;
@@ -319,10 +319,9 @@ body {
 
 .clients-item {
   margin-right: 30px;
-  width: 170px;
-  height: 92px;
+  padding: 16px 32px;
   border: 1px solid var(--brand-color-lightgrey);
-  border-radius: 4px;
+  border-radius: var(--border-radius-default);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,7 +367,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius-default);
   cursor: pointer;
 }
 
@@ -379,7 +378,6 @@ body {
   color: var(--brand-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* PROJECTS */
@@ -475,14 +473,7 @@ body {
 .footer-social-list {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-social-list > li {
-  margin-right: 10px;
-}
-
-.footer-social-list > li:last-child {
-  margin-right: 0;
+  gap: 10px;
 }
 
 .footer-social-icon {
@@ -492,7 +483,5 @@ body {
 }
 
 .footer-social-icon:hover {
-  fill: var(--brand-color-white);
   background-color: var(--brand-color-blue);
-  border-radius: 50%;
 }
