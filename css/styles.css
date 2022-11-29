@@ -1,0 +1,487 @@
+/* BRAND COLORS */
+
+:root {
+  --brand-color-black: #212121;
+  --brand-color-grey: #757575;
+  --brand-color-lightgrey: #afb1b8;
+  --brand-color-white: #fff;
+  --brand-color-blue: #2196f3;
+  --brand-color-dark: #2f303a;
+  --border-radius-default: 4px;
+}
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--brand-color-white);
+  font-family: 'Roboto', sans-serif;
+  color: var(--brand-color-black);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-line {
+  border-bottom: #ececec solid 1px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--brand-color-dark);
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.studio-head {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+/* LOGO */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+.brand-color-blue {
+  color: var(--brand-color-blue);
+}
+
+/* NAVIGATION */
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  margin-right: 46px;
+  display: inline;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-color-black);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--brand-color-blue);
+}
+
+/* CONTACT */
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item {
+  display: inline;
+  margin-right: 50px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
+}
+
+.contact-link {
+  color: var(--brand-color-grey);
+  fill: var(--brand-color-grey);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+  color: var(--brand-color-blue);
+  fill: var(--brand-color-blue);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--brand-color-dark);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-underlay.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  width: 700px;
+}
+
+.hero-title {
+  color: var(--brand-color-white);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4em;
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  color: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border: none;
+  border-radius: var(--border-radius-default);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9em;
+  padding: 10px 41px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+  background-color: var(--brand-color-white);
+  color: var(--brand-color-blue);
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-item {
+  max-width: 270px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.advantages-item:last-child {
+  margin-right: 0;
+}
+
+.advantages-box {
+  background-color: #f5f4fa;
+  border-radius: var(--border-radius-default);
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.advantages-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.7em;
+  color: var(--brand-color-grey);
+}
+
+/* OFFER */
+
+.offer {
+  text-align: center;
+}
+
+.offer-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.offer-item:last-child {
+  margin-right: 0;
+}
+
+/* TEAM */
+
+.team {
+  text-align: center;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
+}
+
+.team-item {
+  background-color: var(--brand-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  max-width: 270px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.team-item:last-child {
+  margin-right: 0;
+}
+
+.team-description-text {
+  color: var(--brand-color-grey);
+  margin-bottom: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-description {
+  padding-top: 30px;
+}
+
+.team-description h3 {
+  margin-bottom: 10px;
+}
+
+.team-social-icon {
+  fill: var(--brand-color-lightgrey);
+}
+
+.team-social-icon:hover {
+  fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border-radius: 50%;
+}
+
+/* CLIENTS */
+
+.clients {
+  padding-top: 94px;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  margin-right: 30px;
+  padding: 16px 32px;
+  border: 1px solid var(--brand-color-lightgrey);
+  border-radius: var(--border-radius-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
+
+.clients-item:hover {
+  border: 1px solid var(--brand-color-blue);
+}
+
+.clients-icon {
+  fill: var(--brand-color-lightgrey);
+}
+
+.clients-item:hover .clients-icon {
+  fill: var(--brand-color-blue);
+}
+
+/* SUBMENU */
+
+.submenu-list {
+  margin: auto;
+  width: 580px;
+  padding: 94px 0 50px 0;
+}
+
+.submenu-list > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.submenu-item {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: #f5f4fa;
+  min-height: 38px;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--border-radius-default);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--brand-color-blue);
+  color: var(--brand-color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* PROJECTS */
+
+.projects-list {
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-photo > img {
+  vertical-align: middle;
+}
+
+.projects-description {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 24px;
+}
+
+.projects-description > h3 {
+  line-height: 2em;
+}
+
+.projects-description > p {
+  color: var(--brand-color-grey);
+  line-height: 2em;
+}
+
+/* FOOTER */
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer .logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: var(--brand-color-white);
+}
+
+.address-list {
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.address-item {
+  color: var(--brand-color-white);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus,
+.address-link:active {
+  color: var(--brand-color-white);
+}
+
+.address-item span {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social > p {
+  color: var(--brand-color-white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-social-icon {
+  fill: var(--brand-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-icon:hover {
+  background-color: var(--brand-color-blue);
+}
