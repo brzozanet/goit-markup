@@ -103,6 +103,9 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: var(--brand-color-black);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -133,6 +136,9 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -192,6 +198,9 @@ body {
   padding: 10px 41px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -298,6 +307,10 @@ body {
 
 .team-social-icon {
   fill: var(--brand-color-lightgrey);
+  border-radius: 50%;
+  transition-property: fill, background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon:hover {
@@ -325,6 +338,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:last-child {
@@ -337,6 +354,9 @@ body {
 
 .clients-icon {
   fill: var(--brand-color-lightgrey);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover .clients-icon {
@@ -369,6 +389,10 @@ body {
   border: none;
   border-radius: var(--border-radius-default);
   cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -389,6 +413,12 @@ body {
   justify-content: space-between;
   row-gap: 30px;
   column-gap: 20px;
+}
+
+.projects-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item:hover {
@@ -446,6 +476,9 @@ body {
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -480,6 +513,9 @@ body {
   fill: var(--brand-color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon:hover {
