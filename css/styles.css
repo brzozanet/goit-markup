@@ -258,10 +258,27 @@ body {
 .offer-item {
   display: inline-block;
   margin-right: 20px;
+  position: relative;
+}
+
+.offer-item > img {
+  display: block;
 }
 
 .offer-item:last-child {
   margin-right: 0;
+}
+
+.offer-description {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--brand-color-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 27px 0;
+  width: 370px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* TEAM */
