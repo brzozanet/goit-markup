@@ -458,7 +458,6 @@ body {
   display: flex;
   align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
-
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
