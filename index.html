@@ -21,6 +21,26 @@
     <title>Studio</title>
   </head>
   <body>
+    <!-- MODAL WINDOW -->
+    <div class="modal is-hidden" data-modal>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat adipisci, sint odio ab
+        facilis cupiditate. Doloribus maiores id quas harum ratione consequatur, atque quam ea!
+        Nihil magnam animi adipisci consequatur libero a cumque aliquid ad, sapiente aperiam totam
+        laborum reiciendis consectetur. Dolorum hic autem voluptatibus possimus inventore doloremque
+        optio veniam nisi deserunt iste dolor qui, repellat dicta sed harum a, rerum debitis esse,
+        corrupti fuga placeat ex atque quas dolorem! Temporibus nemo nihil sequi. Quia sequi
+        laboriosam magni dolore a, amet ducimus aut esse eum quo neque pariatur perferendis numquam
+        minima optio magnam asperiores alias tempore, accusantium unde id quidem nesciunt facere et.
+        Amet aspernatur commodi eaque sequi beatae quod, hic reprehenderit fugiat! Assumenda nisi
+        nostrum vitae eveniet hic consequatur, magnam, fugiat velit sed ipsum dolores corrupti
+        officiis incidunt. Beatae, ipsam iure? Aliquid, numquam autem! Omnis, perferendis ullam
+        eaque tempore ea quos accusamus, culpa laudantium iste rem dolorem, aperiam veniam delectus
+        possimus.
+      </p>
+      <button class="modal-btn-close" data-modal-close>&times;</button>
+    </div>
+    <!-- END MODAL WINDOW -->
     <!-- HEADER -->
     <header class="header-line">
       <div class="header container">
@@ -29,8 +49,8 @@
             ><span class="brand-color-blue">Web</span>Studio</a
           >
           <ul class="menu-list list">
-            <li class="menu-item">
-              <a class="menu-link" href="index.html">Agencja</a>
+            <li class="menu-item is-active-item">
+              <a class="menu-link is-active-link" href="index.html">Agencja</a>
             </li>
             <li class="menu-item">
               <a class="menu-link" href="portfolio.html">Portfolio</a>
@@ -64,7 +84,7 @@
       <section class="hero section">
         <div class="hero-content">
           <h1 class="hero-title">Efektywne rozwiązania dla waszego biznesu</h1>
-          <button type="button" class="hero-btn">Zamów usługę</button>
+          <button type="button" class="hero-btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <!-- END HERO -->

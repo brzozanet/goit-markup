@@ -32,7 +32,6 @@ body {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +90,7 @@ body {
 
 .menu-item {
   margin-right: 46px;
-  display: inline;
+  padding-bottom: 24px;
 }
 
 .menu-item:last-child {
@@ -112,6 +111,17 @@ body {
 .menu-link:focus,
 .menu-link:active {
   color: var(--brand-color-blue);
+}
+
+.is-active-item {
+  border-bottom: 4px solid var(--brand-color-blue);
+  border-radius: 2px;
+}
+
+.is-active-link {
+  color: var(--brand-color-blue);
+  position: relative;
+  top: 2px;
 }
 
 /* CONTACT */
@@ -208,6 +218,27 @@ body {
 .hero-btn:active {
   background-color: var(--brand-color-white);
   color: var(--brand-color-blue);
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  max-width: 528x;
+  min-height: 581px;
+  background-color: var(--brand-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-btn-close {
+  border: 1px solid red;
+  border-radius: 50%;
 }
 
 /* ADVANTAGES */
