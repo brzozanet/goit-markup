@@ -481,7 +481,7 @@ body {
   transition-timing-function: ease;
 }
 
-.projects-photo:hover .projects-photo-overlay {
+.projects-item:hover .projects-photo-overlay {
   transform: translateY(0);
 }
 
