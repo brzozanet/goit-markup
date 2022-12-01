@@ -342,7 +342,9 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-icon:hover {
+.team-social-icon:hover,
+.team-social-icon:focus,
+.team-social-icon:active {
   fill: var(--brand-color-white);
   background-color: var(--brand-color-blue);
   border-radius: 50%;
@@ -580,7 +582,9 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-icon:hover {
+.footer-social-icon:hover,
+.footer-social-icon:focus,
+.footer-social-icon:active {
   background-color: var(--brand-color-blue);
 }
 
