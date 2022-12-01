@@ -32,7 +32,7 @@ body {
 
 .header {
   padding-top: 24px;
-  /* padding-bottom: 24px; */
+  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +91,6 @@ body {
 
 .menu-item {
   margin-right: 46px;
-  padding-bottom: 24px; /* delete this if highlight is incorrectly */
 }
 
 .menu-item:last-child {
@@ -114,15 +113,20 @@ body {
   color: var(--brand-color-blue);
 }
 
-.is-active-item {
-  border-bottom: 4px solid var(--brand-color-blue);
-  border-radius: 2px;
+.is-active {
+  position: relative;
+  color: var(--brand-color-blue);
 }
 
-.is-active-link {
-  color: var(--brand-color-blue);
-  position: relative;
-  top: 2px;
+.is-active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 43px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-color-blue);
+  border-radius: 2px;
 }
 
 /* CONTACT */
@@ -135,7 +139,6 @@ body {
 .contact-item {
   display: inline;
   margin-right: 50px;
-  padding-bottom: 24px; /* delete this if highlight is incorrectly */
 }
 
 .contact-item:last-child {
