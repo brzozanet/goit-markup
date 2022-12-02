@@ -634,19 +634,17 @@ body {
 }
 
 .modal-animation {
-  animation-name: modal-open;
+  animation-name: modal-opening;
   animation-duration: 2000ms;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
-@keyframes modal-open {
+@keyframes modal-opening {
   0% {
     transform: translate(-50%, -50%) scale(0);
-    opacity: 0.7;
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
   }
 }
