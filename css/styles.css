@@ -620,13 +620,6 @@ body {
   border-radius: 4px;
 }
 
-.modal {
-  animation-name: modal-growing;
-  animation-duration: 3000ms;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
 .modal-btn-close {
   position: absolute;
   top: 8px;
@@ -639,11 +632,27 @@ body {
   cursor: pointer;
 }
 
-@keyframes modal-growing {
+.modal-animation {
+  animation-name: modal-open;
+  animation-duration: 4000ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modal-open {
   0% {
     transform: translate(-50%, -50%) scale(0);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes modal-close {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
   }
 }
