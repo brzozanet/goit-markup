@@ -614,6 +614,7 @@ body {
   left: 50%;
   width: 528px;
   min-height: 581px;
+  /* transform: translate(-50%, -50%); */
   background-color: var(--brand-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -634,7 +635,7 @@ body {
 
 .modal-animation {
   animation-name: modal-open;
-  animation-duration: 4000ms;
+  animation-duration: 3000ms;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -642,17 +643,10 @@ body {
 @keyframes modal-open {
   0% {
     transform: translate(-50%, -50%) scale(0);
+    opacity: 0.5;
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@keyframes modal-close {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
   }
 }
