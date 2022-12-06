@@ -651,42 +651,6 @@ body {
   opacity: 0;
 }
 
-/* .backdrop {
-  cursor: not-allowed;
-  display: flex;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 50;
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
-  cursor: initial;
-  position: relative;
-  padding: 40px;
-  width: 528px;
-  height: 581px;
-  margin: auto;
-  background-color: var(--brand-color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  z-index: 100;
-  transform: rotateY(0deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden .modal {
-  transform: rotateY(0deg);
-} */
-
 .backdrop {
   position: fixed;
   left: 0;
@@ -709,12 +673,12 @@ body {
   border-radius: var(--border-radius-default);
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
-  transition-duration: 1s;
+  transition-duration: 250ms;
   transition-timing-function: ease;
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.4);
+  transform: translate(-50%, -50%) scale(0.1);
 }
 
 .modal-btn-close {
