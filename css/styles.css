@@ -718,6 +718,17 @@ body {
   color: var(--brand-color-black);
 }
 
+.modal-form-row {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-row:hover,
+.modal-form-row:focus-within {
+  fill: var(--brand-color-blue);
+}
+
 .modal-form-label {
   display: block;
   position: relative;
@@ -728,9 +739,8 @@ body {
 
 .modal-form-icon {
   position: absolute;
-  top: 26px;
+  top: 27px;
   left: 13px;
-  fill: var(--brand-color-grey);
 }
 
 .modal-form-input {
@@ -773,11 +783,6 @@ body {
   line-height: 2;
   border: none;
   cursor: pointer;
-}
-
-.modal-form-icon:hover,
-.modal-form-label:focus-within {
-  fill: var(--brand-color-blue);
 }
 
 .modal-form-check {
