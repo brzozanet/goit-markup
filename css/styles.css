@@ -718,14 +718,13 @@ body {
   color: var(--brand-color-black);
 }
 
-.modal-form-row {
+.modal-form-label .modal-form-icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-row:hover,
-.modal-form-row:focus-within {
+.modal-form-label:hover .modal-form-icon {
   fill: var(--brand-color-blue);
 }
 
