@@ -89,11 +89,11 @@ body {
   flex-wrap: wrap;
 }
 
-.menu-item {
+.menu_item {
   margin-right: 46px;
 }
 
-.menu-item:last-child {
+.menu_item:last-child {
   margin-right: 0;
 }
 
