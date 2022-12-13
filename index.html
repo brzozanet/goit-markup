@@ -21,35 +21,41 @@
     <title>Studio</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header-line">
-      <div class="header container">
-        <nav class="navigation">
+    <!------------ HEADER BLOCK ------------>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <!------------ LOGO BLOCK ------------>
           <a class="logo" href="index.html" title="Strona główna"
-            ><span class="brand-color-blue">Web</span>Studio</a
+            ><span class="logo--background-light">Web</span>Studio</a
           >
-          <ul class="list menu-list">
-            <li class="menu_item">
-              <a class="menu-link is-active" href="index.html">Agencja</a>
+          <!------------ END LOGO BLOCK ------------>
+          <ul class="header__menuMain list">
+            <li class="header__menuMainItem">
+              <a class="header__menuMainLink header__menuMainLink--isActive" href="index.html"
+                >Agencja</a
+              >
             </li>
-            <li class="menu_item">
-              <a class="menu-link" href="portfolio.html">Portfolio</a>
+            <li class="header__menuMainItem">
+              <a class="header__menuMainLink" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="menu-item"><a class="menu-link" href="#">Kontakt</a></li>
+            <li class="header__menuMainItem">
+              <a class="header__menuMainLink" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              ><svg class="contact-icon" width="16" height="12">
+        <ul class="header__menuContact">
+          <li class="header__menuContactItem">
+            <a href="mailto:info@devstudio.com" class="header__menuContactLink"
+              ><svg class="header__menuContactIcon" width="16" height="12">
                 <use href="images/icons.svg#icon-contact-envelope"></use>
               </svg>
               <span>info@devstudio.com</span></a
             >
           </li>
-          <li class="contact-item">
-            <a href="tel:+48111111111" class="contact-link">
-              <svg class="contact-icon" width="10" height="16">
+          <li class="header__menuContactItem">
+            <a href="tel:+48111111111" class="header__menuContactLink">
+              <svg class="header__menuContactIcon" width="10" height="16">
                 <use href="images/icons.svg#icon-contact-smartphone"></use>
               </svg>
               <span>+48 111 111 111</span>
@@ -58,7 +64,7 @@
         </ul>
       </div>
     </header>
-    <!-- END HEADER -->
+    <!------------ END HEADER BLOCK ------------>
     <main>
       <!-- HERO -->
       <section class="hero section">
@@ -124,7 +130,7 @@
       <!-- END ADVANTAGES -->
       <!-- OFFER -->
       <section class="offer section container">
-        <h2 class="studio-head">Czym się zajmujemy</h2>
+        <h2 class="section-title">Czym się zajmujemy</h2>
         <ul class="offer-list list">
           <li class="offer-item">
             <img
@@ -161,7 +167,7 @@
       <!-- END OFFER -->
       <!-- TEAM -->
       <section class="team section">
-        <h2 class="studio-head">Nasz zespół</h2>
+        <h2 class="section-title">Nasz zespół</h2>
         <ul class="team-list list">
           <li class="team-item">
             <figure class="team-photo">
@@ -260,7 +266,7 @@
       <!-- END TEAM -->
       <!-- CLIENTS -->
       <section class="clients section container">
-        <h2 class="studio-head">Nasi klienci</h2>
+        <h2 class="section-title">Nasi klienci</h2>
         <ul class="clients-list list">
           <li class="clients-item">
             <svg class="clients-icon" width="106" height="60">
