@@ -68,21 +68,21 @@ body {
   align-items: center;
 }
 
-.header__menuMain {
+.header__menu-main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.header__menuMainItem {
+.header__menu-main-item {
   margin-right: 46px;
 }
 
-.header__menuMainItem:last-child {
+.header__menu-main-item:last-child {
   margin-right: 0;
 }
 
-.header__menuMainLink {
+.header__menu-main-link {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -92,18 +92,18 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__menuMainLink:hover,
-.header__menuMainLink:focus,
-.header__menuMainLink:active {
+.header__menu-main-link:hover,
+.header__menu-main-link:focus,
+.header__menu-main-link:active {
   color: var(--brand-color-blue);
 }
 
-.header__menuMainLink--isActive {
+.header__menu-main-link--is-active {
   position: relative;
   color: var(--brand-color-blue);
 }
 
-.header__menuMainLink--isActive::after {
+.header__menu-main-link--is-active::after {
   content: '';
   position: absolute;
   display: block;
@@ -114,21 +114,21 @@ body {
   border-radius: 2px;
 }
 
-.header__menuContact {
+.header__menu-contact {
   display: flex;
   align-items: center;
 }
 
-.header__menuContactItem {
+.header__menu-contact-item {
   display: inline;
   margin-right: 50px;
 }
 
-.header__menuContactItem:last-child {
+.header__menu-contact-item:last-child {
   margin-right: 0;
 }
 
-.header__menuContactLink {
+.header__menu-contact-link {
   color: var(--brand-color-grey);
   fill: var(--brand-color-grey);
   text-decoration: none;
@@ -141,14 +141,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__menuContactLink:hover,
-.header__menuContactLink:focus,
-.header__menuContactLink:active {
+.header__menu-contact-link:hover,
+.header__menu-contact-link:focus,
+.header__menu-contact-link:active {
   color: var(--brand-color-blue);
   fill: var(--brand-color-blue);
 }
 
-.header__menuContactIcon {
+.header__menu-contact-icon {
   margin-right: 10px;
 }
 
@@ -253,24 +253,29 @@ body {
 
 /* ---------- END BUTTON BLOCK ---------- */
 
-/* ADVANTAGES */
+/* ---------- ADVANTAGES BLOCK ---------- */
 
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.advantages-item {
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__list-item {
   max-width: 270px;
   display: inline-block;
   margin-right: 20px;
 }
 
-.advantages-item:last-child {
+.advantages__list-item:last-child {
   margin-right: 0;
 }
 
-.advantages-box {
+.advantages__box {
   background-color: #f5f4fa;
   border-radius: var(--border-radius-default);
   padding: 25px 100px;
@@ -280,39 +285,46 @@ body {
   margin-bottom: 30px;
 }
 
-.advantages-title {
+.advantages__title {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.advantages-text {
+.advantages__text {
   font-size: 14px;
   line-height: 1.7em;
   color: var(--brand-color-grey);
 }
 
-/* OFFER */
+/* ---------- END ADVANTAGES BLOCK ---------- */
+
+/* ---------- OFFER BLOCK ---------- */
 
 .offer {
   text-align: center;
 }
 
-.offer-item {
+.offer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__list-item {
   display: inline-block;
   margin-right: 20px;
   position: relative;
 }
 
-.offer-item > img {
-  display: block;
-}
-
-.offer-item:last-child {
+.offer__list-item:last-child {
   margin-right: 0;
 }
 
-.offer-description {
+.offer__image {
+  display: block;
+}
+
+.offer__description {
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--brand-color-white);
   text-transform: uppercase;
@@ -324,7 +336,9 @@ body {
   bottom: 0;
 }
 
-/* TEAM */
+/* ---------- END OFFER BLOCK ---------- */
+
+/* ---------- TEAM ---------- */
 
 .team {
   text-align: center;
