@@ -380,56 +380,56 @@
       </div>
     </footer>
     <!------------ END FOOTER BLOCK ------------>
-    <!-- MODAL WINDOW -->
+    <!------------ MODAL BLOCK ------------>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn-close" data-modal-close>
-          <svg class="modal-icon-close" width="18" height="18">
+        <button class="modal__close-button" data-modal-close>
+          <svg class="modal__close-icon" width="18" height="18">
             <use href="images/icons.svg#icon-button-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
-        <form name="contact-form" class="modal-form">
-          <label class="modal-form-label">
-            <svg class="modal-form-icon" width="20" height="20">
+        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+        <form name="contact-form" class="modal__form">
+          <label class="modal__form-label">
+            <svg class="modal__form-icon" width="20" height="20">
               <use href="images/icons.svg#icon-modal-name"></use>
             </svg>
             Imię
-            <input type="text" name="contact-name" class="modal-form-input" />
+            <input type="text" name="contact-name" class="modal__form-input" />
           </label>
-          <label class="modal-form-label">
-            <svg class="modal-form-icon" width="20" height="20">
+          <label class="modal__form-label">
+            <svg class="modal__form-icon" width="20" height="20">
               <use href="images/icons.svg#icon-modal-phone"></use>
             </svg>
             Telefon
-            <input type="tel" name="contact-phone" class="modal-form-input" />
+            <input type="tel" name="contact-phone" class="modal__form-input" />
           </label>
-          <label class="modal-form-label">
-            <svg class="modal-form-icon" width="20" height="20">
+          <label class="modal__form-label">
+            <svg class="modal__form-icon" width="20" height="20">
               <use href="images/icons.svg#icon-modal-email"></use>
             </svg>
             Email
-            <input type="email" name="contact-email" class="modal-form-input" />
+            <input type="email" name="contact-email" class="modal__form-input" />
           </label>
-          <label class="modal-form-label"
+          <label class="modal__form-label"
             >Komentarz
             <textarea
               name="contact-comment"
               placeholder="Wprowadź tekst"
-              class="modal-form-input modal-form-textarea"
+              class="modal__form-input modal__form-textarea"
             ></textarea>
           </label>
-          <label class="modal-form-check">
+          <label class="modal__form-check">
             <input type="checkbox" name="accept-rules" value="accept-rules" />
-            Oświadczam iż akceptuję <a href="#" target="_top" class="modal-link">Regulamin</a> i
-            <a href="#" target="_top" class="modal-link">Politykę Prywatności</a>.
+            Oświadczam iż akceptuję <a href="#" target="_top" class="modal__link">Regulamin</a> i
+            <a href="#" target="_top" class="modal__link">Politykę Prywatności</a>.
           </label>
 
-          <button type="submit" class="modal-form-btn">Wyślij</button>
+          <button type="submit" class="modal__form-btn">Wyślij</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- END MODAL WINDOW -->
+    <!------------ END MODAL BLOCK ------------>
   </body>
 </html>
