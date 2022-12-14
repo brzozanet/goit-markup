@@ -404,18 +404,18 @@ body {
 
 /* ---------- END TEAM BLOCK ---------- */
 
-/* CLIENTS */
+/* ---------- CLIENTS BLOCK ---------- */
 
 .clients {
   padding-top: 94px;
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-item {
+.clients__list-item {
   margin-right: 30px;
   padding: 16px 32px;
   border: 1px solid var(--brand-color-lightgrey);
@@ -428,25 +428,27 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item:last-child {
+.clients__list-item:last-child {
   margin-right: 0;
 }
 
-.clients-item:hover {
+.clients__list-item:hover {
   border: 1px solid var(--brand-color-blue);
   cursor: pointer;
 }
 
-.clients-icon {
+.clients__icon {
   fill: var(--brand-color-lightgrey);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item:hover .clients-icon {
+.clients__list-item:hover .clients__icon {
   fill: var(--brand-color-blue);
 }
+
+/* ---------- END CLIENTS BLOCK ---------- */
 
 /* SUBMENU */
 
