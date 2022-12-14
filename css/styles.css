@@ -157,15 +157,19 @@ body {
 /* ---------- LOGO BLOCK ---------- */
 
 .logo {
+  color: var(--brand-color-blue);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  color: #000;
   text-decoration: none;
   margin-right: 93px;
 }
 
-.logo--background-light {
-  color: var(--brand-color-blue);
+.logo--header {
+  color: #000;
+}
+
+.logo--footer {
+  color: var(--brand-color-white);
 }
 
 /* ---------- END LOGO BLOCK ---------- */
@@ -566,7 +570,7 @@ body {
   line-height: 2em;
 }
 
-/* FOOTER */
+/* ---------- FOOTER BLOCK ---------- */
 
 .footer {
   padding-top: 60px;
@@ -574,16 +578,13 @@ body {
   background-color: var(--brand-color-dark);
 }
 
-.footer-content {
+.footer__container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.footer .logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  color: var(--brand-color-white);
+.footer__address {
 }
 
 .address-list {
