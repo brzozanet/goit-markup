@@ -370,9 +370,6 @@ body {
   margin-bottom: 0px;
 }
 
-.team__list {
-}
-
 .team__list-item {
   background-color: var(--brand-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -402,9 +399,6 @@ body {
 
 .team__description {
   padding-top: 30px;
-}
-
-.team__description-socials {
 }
 
 .team__description-icon {
@@ -577,9 +571,6 @@ body {
   align-items: center;
 }
 
-.footer__address {
-}
-
 .footer__address-list {
   padding-left: 0px;
   padding-top: 20px;
@@ -622,9 +613,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-}
-
-.footer__socials-list-item {
 }
 
 .footer__socials-icon {
