@@ -454,22 +454,24 @@ body {
 
 /* ---------- END CLIENTS BLOCK ---------- */
 
-/* SUBMENU */
+/* ---------- SUBMENU BLOCK ---------- */
 
-.submenu-list {
+.submenu {
   margin: auto;
   width: 580px;
   padding: 94px 0 50px 0;
 }
 
-.submenu-list > ul {
+.submenu__list {
   display: flex;
   justify-content: space-around;
 }
 
-.submenu-item {
+.submenu__list-item {
   list-style-type: none;
 }
+
+/* ---------- END SUBMENU BLOCK ---------- */
 
 .btn {
   background-color: #f5f4fa;
