@@ -491,32 +491,9 @@ body {
 
 /* ---------- END SUBMENU BLOCK ---------- */
 
-/* .btn {
-  background-color: #f5f4fa;
-  min-height: 38px;
-  padding: 0px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
-  border-radius: var(--border-radius-default);
-  cursor: pointer;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+/* ---------- PROJECTS BLOCK ---------- */
 
-/* .btn:hover,
-.btn:focus,
-.btn:active {
-  background-color: var(--brand-color-blue);
-  color: var(--brand-color-white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
-
-/* PROJECTS */
-
-.projects-list {
+.projects__list {
   padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
@@ -525,25 +502,25 @@ body {
   column-gap: 20px;
 }
 
-.projects-item {
+.projects__list-item {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-item:hover {
+.projects__list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-photo {
+.projects__photo {
   position: relative;
   width: 370px;
   height: 274px;
   overflow: hidden;
 }
 
-.projects-photo-overlay {
+.projects__photo-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -558,11 +535,11 @@ body {
   transition-timing-function: ease;
 }
 
-.projects-item:hover .projects-photo-overlay {
+.projects__list-item:hover .projects__photo-overlay {
   transform: translateY(0);
 }
 
-.projects-photo-overlay > p {
+.projects__photo-overlay-text {
   color: var(--brand-color-white);
   font-size: 18px;
   line-height: 1.6;
@@ -570,25 +547,22 @@ body {
   margin-right: 24px;
 }
 
-.projects-photo > img {
-  vertical-align: middle;
-}
-
-.projects-description {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+.projects__description {
+  border: 1px solid #eee;
+  border-top: none;
   padding: 20px 24px;
 }
 
-.projects-description > h3 {
-  line-height: 2em;
+.projects__description-title {
+  line-height: 2;
 }
 
-.projects-description > p {
+.projects__description-text {
   color: var(--brand-color-grey);
-  line-height: 2em;
+  line-height: 2;
 }
+
+/* ---------- END PROJECTS BLOCK ---------- */
 
 /* ---------- FOOTER BLOCK ---------- */
 
