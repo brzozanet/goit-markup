@@ -1,0 +1,100 @@
+.header {
+  border-bottom: #ececec solid 1px;
+
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__menu-main-item {
+    margin-right: 46px;
+  }
+
+  &__menu-main-item:last-child {
+    margin-right: 0;
+  }
+
+  &__menu-main-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondaryColorBlack;
+    transition-property: color;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__menu-main-link:hover,
+  &__menu-main-link:focus,
+  &__menu-main-link:active {
+    color: $primaryColor;
+  }
+
+  &__menu-main-link--is-active {
+    position: relative;
+    color: $primaryColor;
+  }
+
+  &__menu-main-link--is-active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 43px;
+    width: 100%;
+    height: 4px;
+    background-color: $primaryColor;
+    border-radius: 2px;
+  }
+
+  &__menu-contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__menu-contact-item {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  &__menu-contact-item:last-child {
+    margin-right: 0;
+  }
+
+  &__menu-contact-link {
+    color: $tertiaryColorGrey;
+    fill: $tertiaryColorGrey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition-property: color, fill;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__menu-contact-link:hover,
+  &__menu-contact-link:focus,
+  &__menu-contact-link:active {
+    color: $primaryColor;
+    fill: $primaryColor;
+  }
+
+  &__menu-contact-icon {
+    margin-right: 10px;
+  }
+}
