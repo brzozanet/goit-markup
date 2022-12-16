@@ -1,0 +1,27 @@
+.hero {
+  background-color: $tertiaryColorDark;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-underlay.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    text-align: center;
+    width: 700px;
+  }
+
+  &__title {
+    color: $secondaryColorWhite;
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4em;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+  }
+}
