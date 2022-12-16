@@ -1,0 +1,17 @@
+@use './utils/vars' as *;
+
+@import './components/globals';
+@import './components/header';
+@import './components/logo';
+
+@import './components/advantages';
+@import './components/button';
+@import './components/clients';
+@import './components/hero';
+@import './components/offer';
+@import './components/projects';
+@import './components/submenu';
+@import './components/team';
+
+@import './components/footer';
+@import './components/modal';
