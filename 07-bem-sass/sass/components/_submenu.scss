@@ -1,0 +1,14 @@
+.submenu {
+  margin: auto;
+  width: 580px;
+  padding: 94px 0 50px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list-item {
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,15 @@
+.logo {
+  color: $primaryColor;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  margin-right: 93px;
+
+  &--header {
+    color: #000;
+  }
+
+  &--footer {
+    color: $secondaryColorWhite;
+  }
+}
