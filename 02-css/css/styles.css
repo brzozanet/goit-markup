@@ -1,0 +1,276 @@
+/* BRAND COLORS */
+
+:root {
+  --brand-color-black: #212121;
+  --brand-color-grey: #757575;
+  --brand-color-white: #fff;
+  --brand-color-blue: #2196f3;
+  --brand-background-dark: #2f303a;
+}
+
+/* GLOBAL STYLES */
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+  color: var(--brand-color-black);
+}
+
+.wrapper {
+  width: 1600px;
+  margin: auto;
+  background-color: var(--brand-color-white);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  height: 80px;
+  border-bottom: #ececec solid 1px;
+  padding: 0 215px;
+}
+
+.main {
+  margin: 94px 215px 0px 215px;
+}
+
+.footer {
+  padding: 60px 0px 60px 215px;
+  background-color: var(--brand-background-dark);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.studio-head {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+/* LOGO */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-right: 93px;
+  float: left;
+}
+
+.brand-color-blue {
+  color: var(--brand-color-blue);
+}
+
+/* NAVIGATION */
+
+.menu-list {
+  float: left;
+  margin-top: 32px;
+}
+
+.menu-item {
+  display: inline;
+  margin-right: 46px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-color-black);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--brand-color-blue);
+}
+
+/* CONTACT */
+
+.contact-list {
+  float: left;
+  margin-top: 32px;
+  margin-left: 268px;
+}
+
+.contact-item {
+  display: inline;
+  margin-right: 50px;
+}
+
+.contact-link {
+  color: var(--brand-color-grey);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+  color: var(--brand-color-blue);
+}
+
+/* SLOGAN */
+
+.slogan {
+  height: 600px;
+  background-color: var(--brand-background-dark);
+  border: 1px solid var(--brand-background-dark); /* I dont't know why this property is required */
+  text-align: center;
+}
+
+.slogan-content {
+  margin: 200px 452px 0px 452px;
+}
+
+.slogan-title {
+  color: var(--brand-color-white);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4em;
+  letter-spacing: 0.06em;
+}
+
+.slogan-btn {
+  color: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9em;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.slogan-btn:hover,
+.slogan-btn:focus,
+.slogan-btn:active {
+  background-color: var(--brand-color-white);
+  color: var(--brand-color-blue);
+}
+
+/* ADVANTAGES */
+
+.advantages-item {
+  display: inline;
+}
+
+.advantages-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.7em;
+  color: var(--brand-color-grey);
+}
+
+/* OFFER */
+
+.offer {
+  margin-top: 94px;
+  text-align: center;
+}
+
+.offer-item {
+  display: inline;
+}
+
+/* TEAM */
+
+.team {
+  margin-top: 94px;
+  padding-top: 94px;
+  text-align: center;
+  background-color: #f5f4fa;
+  border: 1px solid #f5f4fa; /* I dont't know why this property is required */
+}
+
+.team-item {
+  background-color: var(--brand-color-white);
+}
+
+.team-description-text {
+  color: var(--brand-color-grey);
+}
+
+/* SUBMENU */
+
+.submenu-list {
+  margin: auto;
+  width: 580px;
+}
+
+.submenu-item {
+  display: inline;
+}
+
+.btn {
+  background-color: #f5f4fa;
+  height: 38px;
+  padding: 0px 20px 0px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--brand-color-blue);
+  color: var(--brand-color-white);
+}
+
+/* PROJECTS */
+
+.projects-description-text {
+  color: var(--brand-color-grey);
+}
+
+/* FOOTER */
+
+.footer .logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: var(--brand-color-white);
+  float: none;
+}
+
+.address-list {
+  padding-left: 0px;
+}
+
+.address-item {
+  color: var(--brand-color-white);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus,
+.address-link:active {
+  color: var(--brand-color-white);
+}
+
+.address-item span {
+  text-decoration: underline;
+}
