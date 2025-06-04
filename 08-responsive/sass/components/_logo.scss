@@ -1,0 +1,25 @@
+.logo {
+  color: $primaryColor;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  margin-right: 0;
+
+  &--header {
+    color: #000;
+  }
+
+  &--footer {
+    color: $secondaryColorWhite;
+  }
+}
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

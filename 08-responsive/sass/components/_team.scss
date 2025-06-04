@@ -1,0 +1,86 @@
+.team {
+  text-align: center;
+  background-color: #f5f4fa;
+  padding: 60px 0;
+  margin-bottom: 0px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__list-item {
+    background-color: $secondaryColorWhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 100%;
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__description-name {
+    margin-bottom: 10px;
+  }
+
+  &__description-text {
+    color: $tertiaryColorGrey;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    padding-top: 30px;
+  }
+
+  &__description-icon {
+    fill: $tertiaryColorLight;
+    border-radius: 50%;
+    transition-property: fill, background-color, border-radius;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__description-icon:hover,
+  &__description-icon:focus,
+  &__description-icon:active {
+    fill: $secondaryColorWhite;
+    background-color: $primaryColor;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .team__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .team {
+    padding: 94px 0;
+  }
+
+  .team__list {
+    flex-wrap: nowrap;
+  }
+
+  .team__description-text {
+    margin-bottom: 30px;
+  }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

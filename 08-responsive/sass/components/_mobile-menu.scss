@@ -1,0 +1,139 @@
+@media screen and (max-width: $breakpointPhoneEnd) {
+  .header__menu-main,
+  .header__menu-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpointTabletStart) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $secondaryColorWhite;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $secondaryColorWhite;
+  }
+
+  &__icon {
+    fill: $secondaryColorBlack;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__icon:hover {
+    fill: $primaryColor;
+  }
+
+  &__icon--close {
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+  }
+
+  &__icon--close:hover {
+    transform: rotate(540deg);
+  }
+
+  &__content {
+    height: 100vh;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    margin-bottom: 36px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    font-size: 40px;
+    font-weight: 500;
+    color: $secondaryColorBlack;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $primaryColor;
+  }
+
+  &__tel {
+    margin-bottom: 32px;
+  }
+
+  &__tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    color: $primaryColor;
+    text-decoration: none;
+  }
+
+  &__mail {
+    margin-bottom: 64px;
+  }
+
+  &__mail-link {
+    font-weight: 500;
+    font-size: 24px;
+    color: $tertiaryColorGrey;
+    text-decoration: none;
+  }
+
+  &__socials-item {
+    display: inline-block;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+  &__socials-item:last-child {
+    border: none;
+    margin: none;
+    padding: none;
+  }
+
+  &__socials-link {
+    font-weight: 500;
+    font-size: 18px;
+    color: $primaryColor;
+    text-decoration: none;
+  }
+}

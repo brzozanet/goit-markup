@@ -1,0 +1,79 @@
+.hero {
+  background-color: $tertiaryColorDark;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    color: $secondaryColorWhite;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-1600@2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-1600@3x.jpg);
+  }
+}
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .hero {
+    padding-top: 80px;
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .hero {
+    height: 600px;
+    padding-top: 80px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

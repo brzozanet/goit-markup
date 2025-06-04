@@ -1,0 +1,65 @@
+.advantages {
+  padding: 60px 15px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__box {
+    background-color: #f5f4fa;
+    border-radius: $borderRadiusDefault;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $tertiaryColorGrey;
+  }
+}
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .advantages__title {
+    text-align: left;
+  }
+
+  .advantages__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .advantages {
+    padding: 94px 0;
+  }
+
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__title {
+    text-align: left;
+  }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

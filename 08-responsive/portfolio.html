@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/main.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!------------ HEADER BLOCK ------------>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <!------------ LOGO BLOCK ------------>
+          <a class="logo" href="index.html" title="Strona główna"
+            >Web<span class="logo--header">Studio</span></a
+          >
+          <!------------ END LOGO BLOCK ------------>
+          <ul class="header__menu-main list">
+            <li class="header__menu-main-item">
+              <a class="header__menu-main-link" href="index.html">Agencja</a>
+            </li>
+            <li class="header__menu-main-item">
+              <a
+                class="header__menu-main-link header__menu-main-link--is-active"
+                href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__menu-main-item">
+              <a class="header__menu-main-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__menu-contact list">
+          <li class="header__menu-contact-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header__menu-contact-link"
+              ><svg class="header__menu-contact-icon" width="16" height="12">
+                <use href="images/icons.svg#icon-contact-envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
+          </li>
+          <li class="header__menu-contact-item">
+            <a href="tel:+48111111111" class="header__menu-contact-link">
+              <svg class="header__menu-contact-icon" width="10" height="16">
+                <use href="images/icons.svg#icon-contact-smartphone"></use>
+              </svg>
+              <span>+48 111 111 111</span>
+            </a>
+          </li>
+        </ul>
+        <!------------ MOBILE MENU BUTTON OPEN ------------>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="images/icons.svg#icon-mobile-menu-open"></use>
+          </svg>
+        </button>
+        <!------------ END MOBILE MENU BUTTON OPEN ------------>
+      </div>
+    </header>
+    <!------------ END HEADER BLOCK ------------>
+    <main class="container">
+      <!------------ SUBMENU BLOCK ------------>
+      <section class="submenu section">
+        <ul class="submenu__list">
+          <li class="submenu__list-item">
+            <!------------ BUTTON BLOCK ------------>
+            <button type="button" class="button button--submenu">
+              Wszystkie
+            </button>
+            <!------------ END BUTTON BLOCK ------------>
+          </li>
+          <li class="submenu__list-item">
+            <!------------ BUTTON BLOCK ------------>
+            <button type="button" class="button button--submenu">Strony</button>
+            <!------------ END BUTTON BLOCK ------------>
+          </li>
+          <li class="submenu__list-item">
+            <!------------ BUTTON BLOCK ------------>
+            <button type="button" class="button button--submenu">
+              Aplikacje
+            </button>
+            <!------------ END BUTTON BLOCK ------------>
+          </li>
+          <li class="submenu__list-item">
+            <!------------ BUTTON BLOCK ------------>
+            <button type="button" class="button button--submenu">Dizajn</button>
+            <!------------ END BUTTON BLOCK ------------>
+          </li>
+          <li class="submenu__list-item">
+            <!------------ BUTTON BLOCK ------------>
+            <button type="button" class="button button--submenu">
+              Marketing
+            </button>
+            <!------------ END BUTTON BLOCK ------------>
+          </li>
+        </ul>
+      </section>
+      <!------------ END SUBMENU BLOCK ------------>
+      <!------------ PROJECTS BLOCK ------------>
+      <section class="projects">
+        <ul class="projects__list list">
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Technocrack"
+                  src="images/portfolio1.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio1@2x.jpg 2x,
+                    images/portfolio1@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Technocrack</h3>
+                <p class="projects__description-text">Strona internetowa</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Grafika New Orlean vs Golden Star"
+                  src="images/portfolio2.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio2@2x.jpg 2x,
+                    images/portfolio2@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consectetur reiciendis omnis cupiditate nihil iure
+                    laudantium sit ad modi beatae. Alias libero corporis sequi
+                    deleniti molestias vitae nemo repellat aspernatur numquam.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">
+                  Grafika New Orlean vs Golden Star
+                </h3>
+                <p class="projects__description-text">Dizajn</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Restauracja Seafood"
+                  src="images/portfolio3.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio3@2x.jpg 2x,
+                    images/portfolio3@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi tenetur ipsa adipisci.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Restauracja Seafood</h3>
+                <p class="projects__description-text">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Projekt Prime"
+                  src="images/portfolio4.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio4@2x.jpg 2x,
+                    images/portfolio4@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsam quis nisi sunt odio aut. Praesentium natus pariatur.
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Projekt Prime</h3>
+                <p class="projects__description-text">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Projekt Boxes"
+                  src="images/portfolio5.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio5@2x.jpg 2x,
+                    images/portfolio5@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita explicabo repellat quo adipisci illum quaerat hic
+                    excepturi, possimus in ex! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Projekt Boxes</h3>
+                <p class="projects__description-text">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Inspiration has no Borders"
+                  src="images/portfolio6.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio6@2x.jpg 2x,
+                    images/portfolio6@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis veniam repellat natus, quis eos blanditiis.
+                    Voluptatibus voluptate aspernatur repellat maiores
+                    accusantium tenetur itaque asperiores ea reiciendis, nam
+                    sapiente officiis optio!
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">
+                  Inspiration has no Borders
+                </h3>
+                <p class="projects__description-text">Strona internetowa</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Magazyn Limited Edition"
+                  src="images/portfolio7.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio7@2x.jpg 2x,
+                    images/portfolio7@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis hic ipsum et, necessitatibus assumenda doloribus qui
+                    voluptatum. Corporis saepe dolorem eaque eius!
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">
+                  Magazyn Limited Edition
+                </h3>
+                <p class="projects__description-text">Dizajn</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Projekt LAB"
+                  src="images/portfolio8.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio8@2x.jpg 2x,
+                    images/portfolio8@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi quidem laboriosam quo corrupti possimus inventore
+                    incidunt commodi enim iste magnam repellendus rerum quis in,
+                    temporibus vitae.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Projekt LAB</h3>
+                <p class="projects__description-text">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="projects__list-item">
+            <figure>
+              <div class="projects__photo">
+                <img
+                  alt="Growing Business"
+                  src="images/portfolio9.jpg"
+                  sizes="370px"
+                  srcset="
+                    images/portfolio9@2x.jpg 2x,
+                    images/portfolio9@3x.jpg 3x
+                  "
+                />
+                <div class="projects__photo-overlay">
+                  <p class="projects__photo-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione aliquam voluptas sit accusamus? Repudiandae voluptas
+                    error ipsa aperiam molestias quaerat harum provident. Vitae,
+                    explicabo dolor.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="projects__description">
+                <h3 class="projects__description-title">Growing Business</h3>
+                <p class="projects__description-text">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <!------------ END PROJECTS BLOCK ------------>
+    </main>
+    <!------------ FOOTER BLOCK ------------>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__address">
+          <!------------ LOGO BLOCK ------------>
+          <a class="logo" href="index.html" title="Strona główna"
+            >Web<span class="logo--footer">Studio</span></a
+          >
+          <!------------ END LOGO BLOCK ------------>
+          <address>
+            <ul class="footer__address-list list">
+              <li class="footer__address-list-item">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="footer__address-list-item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer__address-list-item-link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__address-list-item">
+                <a
+                  href="tel:+48111111111"
+                  class="footer__address-list-item-link"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__socials">
+          <p class="footer__description">Dołącz do nas</p>
+          <ul class="footer__socials-list list">
+            <li class="footer__socials-list-item">
+              <svg class="footer__socials-icon" width="44" height="44">
+                <use href="images/icons.svg#icon-social-instagram"></use>
+              </svg>
+            </li>
+            <li class="footer__socials-list-item">
+              <svg class="footer__socials-icon" width="44" height="44">
+                <use href="images/icons.svg#icon-social-twitter"></use>
+              </svg>
+            </li>
+            <li class="footer__socials-list-item">
+              <svg class="footer__socials-icon" width="44" height="44">
+                <use href="images/icons.svg#icon-social-facebook"></use>
+              </svg>
+            </li>
+            <li class="footer__socials-list-item">
+              <svg class="footer__socials-icon" width="44" height="44">
+                <use href="images/icons.svg#icon-social-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <p class="footer__description">Zapisz się do newslettera</p>
+          <form name="newsletter" class="footer__newsletter-form">
+            <label
+              ><input
+                type="email"
+                name="newsletter-email"
+                class="footer__newsletter-form-input"
+                placeholder="E-mail"
+            /></label>
+            <!------------ BUTTON BLOCK ------------>
+            <button type="submit" class="button button--newsletter">
+              <span>Zapisz się</span>
+              <svg class="footer__newsletter-icon" width="24" height="24">
+                <use href="images/icons.svg#icon-newsletter"></use>
+              </svg>
+            </button>
+            <!------------ END BUTTON BLOCK ------------>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!------------ END FOOTER BLOCK ------------>
+    <!------------ MOBILE MENU BLOCK ------------>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="mobile-menu__icon mobile-menu__icon--close"
+          width="40"
+          height="40"
+        >
+          <use href="images/icons.svg#icon-mobile-menu-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__link">Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Kontakt</a>
+          </li>
+        </ul>
+        <div>
+          <p class="mobile-menu__tel">
+            <a href="tel:+48111111111" class="mobile-menu__tel-link"
+              >+48 111 111 111</a
+            >
+          </p>
+          <p class="mobile-menu__mail">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link"
+              >info@devstudio.com</a
+            >
+          </p>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu__socials-item">
+              <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!------------ END MOBILE MENU BLOCK ------------>
+  </body>
+</html>
